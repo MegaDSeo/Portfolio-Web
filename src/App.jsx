@@ -3,6 +3,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css'
 import Nav from './components/Nav/Nav'
 import Inicio from './components/Inicio/Inicio'
+import Proyectos from './components/Proyectos/Proyectos'
+import Habilidades from './components/Habilidades/Habilidades'
+import Testimonios from './components/Testimonios/Testimonios'
+import Contacto from './components/Contacto/Contacto'
 function App() {
   return (
     <>
@@ -10,10 +14,10 @@ function App() {
         <Nav />
         <Routes>
           <Route path='/' element={<Inicio />}/>
-          <Route path='/proyectos'/>
-          <Route path='/habilidades'/>
-          <Route path='/testimonios'/>
-          <Route path='/contacto'/>
+          <Route path='/proyectos' element={<Proyectos />}/>
+          <Route path='/habilidades' element={<Habilidades />}/>
+          <Route path='/testimonios' element={<Testimonios />}/>
+          <Route path='/contacto' element={<Contacto />}/>
         </Routes>
       </Router>
     </>

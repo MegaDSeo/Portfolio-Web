@@ -10,7 +10,9 @@ const Nav = () => {
         <>
 	   	<nav>
 			<div className="nav-max-contain">
-				<img src={logoNav} alt="" />
+				<div className="nav-img">
+					<img src={logoNav} alt="" />
+				</div>
 				<ul>
 					<li className={seccion.pathname === '/' ? 'active' : ''} ><Link to="/">Inicio</Link></li>
 					<li className={seccion.pathname === '/proyectos' ? 'active' : ''}><Link to="/proyectos">Proyectos</Link></li>

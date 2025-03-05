@@ -2,35 +2,55 @@
 main{
     height: calc(100vh - 12vh);
     display: grid;
-    place-content: center;
+    overflow: hidden;
     & .main-max-contain{
         max-width: 1240px;
         width: 100%;
         margin: auto;
         display: flex;
-        flex-direction: column;
         align-items: center;
-        text-align: center;
-        & img{
-            width: 250px;
-            height: 250px;
-            object-fit: cover;
-            border-radius: 50%;
+        justify-content: space-between;
+        & .main-overlay{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            border-radius: 100%;
+            position: relative;            
+            & .avatar{
+                width: 450px;
+                height: 450px;
+                object-fit: cover;
+                border-radius: 50%;
+                background-color: #1c1b1b;
+            }
+            & .overlay{
+                position: absolute;
+                border: 4px dotted #74AEED;
+                box-shadow: 0 0 10px #74AEED;
+                animation: giro 3s infinite ;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                border-radius: 100%;
+            }
         }
         & h1{
             color: #74AEED;
             margin-top: 1rem;
-            font-size: 3em;
+            font-size: 4.5em;
         }
         & h3{
-            font-size: 2em;
-            text-shadow: 0 0 10px #74AEED;
+            color: #74AEED;
+            font-size: 3em;
         }
         & p{
             color: #fff;
-            max-width: 700px;
-            line-height: 25px;
+            max-width: 600px;
+            line-height: 29px;
             margin-top: 1rem;
+            font-size: 1.2em;
         }
         & .main-social{
             display: flex;
@@ -38,7 +58,7 @@ main{
             margin-top: 1rem;
             & a{
                 font-size: .9em;
-                background-color: transparent;
+                background-color: #1c1b1b;
                 padding: 1rem;
                 border-radius: 20px;
                 border: 3px solid #74AEED;
@@ -58,5 +78,11 @@ main{
                 }
             }
         }
+    }
+}
+
+@keyframes giro {
+    to{
+        transform: rotate(360deg);
     }
 }

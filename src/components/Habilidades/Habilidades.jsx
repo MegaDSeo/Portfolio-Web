@@ -1,0 +1,11 @@
+import React from 'react';
+
+const Habilidades = () =>{
+    return (
+        <>
+            <h1>Habilidades</h1>
+        </>
+    )
+}
+
+export default Habilidades;
