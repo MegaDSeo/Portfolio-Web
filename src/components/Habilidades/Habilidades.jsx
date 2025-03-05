@@ -1,9 +1,13 @@
 import React from 'react';
-
-const Habilidades = () =>{
+import './habilidades.css'
+const Habilidades = () => {
     return (
         <>
-            <h1>Habilidades</h1>
+            <section id='habilidades'>
+                <div className="skills-contain">
+                    <h1><span>Mis</span> Habilidades</h1>
+                </div>
+            </section>
         </>
     )
 }

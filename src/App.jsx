@@ -1,25 +1,22 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './App.css'
 import Nav from './components/Nav/Nav'
 import Inicio from './components/Inicio/Inicio'
+import About from './components/Sobre mi/About';
 import Proyectos from './components/Proyectos/Proyectos'
 import Habilidades from './components/Habilidades/Habilidades'
 import Testimonios from './components/Testimonios/Testimonios'
 import Contacto from './components/Contacto/Contacto'
+import './App.css'
 function App() {
   return (
     <>
-      <Router>
         <Nav />
-        <Routes>
-          <Route path='/' element={<Inicio />}/>
-          <Route path='/proyectos' element={<Proyectos />}/>
-          <Route path='/habilidades' element={<Habilidades />}/>
-          <Route path='/testimonios' element={<Testimonios />}/>
-          <Route path='/contacto' element={<Contacto />}/>
-        </Routes>
-      </Router>
+        <Inicio />
+        <About />
+        <Proyectos />
+        <Habilidades />
+        <Testimonios />
+        <Contacto />
     </>
   )
 }

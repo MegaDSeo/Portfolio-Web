@@ -1,11 +1,23 @@
 import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
 
 import logoNav from '../../assets/logo.png' ;
 import './Nav.css'
 
 const Nav = () => {
-	const seccion = useLocation();
+	const [classOption, setClassOption] = useState('inicio')
+	const handleSection = (seccion) =>{
+		setClassOption(seccion)
+		document.getElementById(seccion).scrollIntoView({behavior: "smooth"})
+	}
+	window.addEventListener('scroll', () =>{
+		if(window.scrollY > 24){
+			document.querySelector('nav').style.backgroundColor = 'rgba(255, 255, 255, 0.802)'
+			document.querySelector('nav').style.backdropFilter = 'blur(10px)'
+		}else if(window.scrollY === 0){
+			document.querySelector('nav').style.backgroundColor = '#bddcfd'
+		}
+		
+	})
      return(
         <>
 	   	<nav>
@@ -14,11 +26,12 @@ const Nav = () => {
 					<img src={logoNav} alt="" />
 				</div>
 				<ul>
-					<li className={seccion.pathname === '/' ? 'active' : ''} ><Link to="/">Inicio</Link></li>
-					<li className={seccion.pathname === '/proyectos' ? 'active' : ''}><Link to="/proyectos">Proyectos</Link></li>
-					<li className={seccion.pathname === '/habilidades' ? 'active' : ''}><Link to="habilidades">Habilidades</Link></li>
-					<li className={seccion.pathname === '/testimonios' ? 'active' : ''}><Link to="/testimonios">Testimonios</Link></li>
-					<li className={seccion.pathname === '/contacto' ? 'active' : ''}><Link to="/contacto">Contacto</Link></li>
+					<li><a className={classOption === 'inicio' ? 'active' : '' && 'active'} onClick={() => handleSection('inicio')}>Inicio</a></li>
+					<li><a className={classOption === 'about' ? 'active' : '' && 'active'} onClick={() => handleSection('about')}>Sobre mi</a></li>
+					<li><a className={classOption === 'proyectos' ? 'active' : ''} onClick={() => handleSection('proyectos')}>Proyectos</a></li>
+					<li><a className={classOption === 'habilidades' ? 'active' : ''} onClick={() => handleSection('habilidades')}>Habilidades</a></li>
+					<li><a className={classOption === 'testimonios' ? 'active' : ''} onClick={() => handleSection('testimonios')}>Testimonios</a></li>
+					<li><a className={classOption === 'contacto' ? 'active' : ''} onClick={() => handleSection('contacto')}>Contacto</a></li>
 				</ul>
 			</div>
 		</nav>

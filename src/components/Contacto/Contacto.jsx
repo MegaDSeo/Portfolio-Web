@@ -1,9 +1,11 @@
 import React from 'react';
 
-const Contacto = () =>{
+const Contacto = () => {
     return (
         <>
-            <h1>Contacto</h1>
+            <section id="contacto">
+                <h1>Contacto</h1>
+            </section>
         </>
     )
 }

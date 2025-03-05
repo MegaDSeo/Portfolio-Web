@@ -1,9 +1,11 @@
 import React from 'react';
 
-const Testimonios = () =>{
+const Testimonios = () => {
     return (
         <>
-            <h1>Testimonios</h1>
+            <section id="testimonios">
+                <h1>Testimonios</h1>
+            </section>
         </>
     )
 }

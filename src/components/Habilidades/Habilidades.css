@@ -1,0 +1,19 @@
+#habilidades{
+    background-color: #1c1b1b;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    & .skills-contain{
+        max-width: 1240px;
+        width: 100%;
+        margin: auto;
+        & h1{
+            text-align: center;
+            font-size: 3em;
+            color: #fff;
+            & span{
+                color: #0076f4;
+            }
+        }
+    }
+}
