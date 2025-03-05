@@ -1,0 +1,35 @@
+nav{
+    background-color: white;
+    display: flex;
+    height: 12vh;
+    & .nav-max-contain{
+        max-width: 1240px;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        & img{
+            width: 200px;
+            object-fit: contain;
+        }
+        & ul{
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            & li{
+                list-style: none;
+                & a{
+                    text-decoration: none;
+                    color: #000;
+                    font-weight: 500;
+                }
+                
+            }
+            & li.active a{
+                color: #74AEED;
+            }
+            
+        }
+    }
+}
+
