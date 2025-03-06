@@ -1,0 +1,25 @@
+footer{
+    height: 20vh;
+    padding: 2rem;
+    & .contact-contain{
+        & form{
+            & .form-contain{
+                display: grid;
+                justify-content: center;
+                gap: 1rem;
+                & input{
+                    border: none;
+                    outline: none;
+                }
+                & textarea{
+                    resize: none;
+                    overflow: hidden;
+                    padding: .4rem .3rem;
+                    border: none;
+                    outline: none;
+                    form-sizing: content;
+                }
+            }
+        }
+    }
+}

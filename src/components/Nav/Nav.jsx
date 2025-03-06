@@ -14,7 +14,7 @@ const Nav = () => {
 			document.querySelector('nav').style.backgroundColor = 'rgba(255, 255, 255, 0.802)'
 			document.querySelector('nav').style.backdropFilter = 'blur(10px)'
 		}else if(window.scrollY === 0){
-			document.querySelector('nav').style.backgroundColor = '#bddcfd'
+			document.querySelector('nav').style.backgroundColor = '#1c1b1b'
 		}
 		
 	})
@@ -30,8 +30,6 @@ const Nav = () => {
 					<li><a className={classOption === 'about' ? 'active' : '' && 'active'} onClick={() => handleSection('about')}>Sobre mi</a></li>
 					<li><a className={classOption === 'proyectos' ? 'active' : ''} onClick={() => handleSection('proyectos')}>Proyectos</a></li>
 					<li><a className={classOption === 'habilidades' ? 'active' : ''} onClick={() => handleSection('habilidades')}>Habilidades</a></li>
-					<li><a className={classOption === 'testimonios' ? 'active' : ''} onClick={() => handleSection('testimonios')}>Testimonios</a></li>
-					<li><a className={classOption === 'contacto' ? 'active' : ''} onClick={() => handleSection('contacto')}>Contacto</a></li>
 				</ul>
 			</div>
 		</nav>

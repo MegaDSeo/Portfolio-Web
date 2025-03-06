@@ -3,7 +3,7 @@ main{
     height: calc(100vh - 12vh);
     display: grid;
     overflow: hidden;
-    background-color: #bddcfd;
+    background-color: #1c1b1b;
     & .main-max-contain{
         max-width: 1240px;
         width: 100%;
@@ -42,7 +42,7 @@ main{
             margin-top: 1rem;
             font-size: 4.5em;
             & span{
-                color: #1c1b1b;
+                color: #ffffff;
             }
         }
         & h3{
@@ -50,7 +50,7 @@ main{
             font-size: 3em;
         }
         & p{
-            color: #1c1b1b;
+            color: #ffffff;
             max-width: 600px;
             line-height: 29px;
             margin-top: 1rem;
