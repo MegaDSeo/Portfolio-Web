@@ -1,7 +1,14 @@
 footer{
     height: 20vh;
     padding: 2rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
     & .contact-contain{
+        h1{
+            color: #0076f4;
+            font-size: 3em;
+        }
         & form{
             & .form-contain{
                 display: grid;

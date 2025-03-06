@@ -1,0 +1,17 @@
+#proyectos{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    & .projets-contain{
+        max-width: 1240px;
+        width: 100%;
+        margin: auto;
+        & h1{
+            font-size: 3em;
+            color: #0076f4;
+            & span{
+                color: #fff;
+            }
+        }
+    }
+}

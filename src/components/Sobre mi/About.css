@@ -1,5 +1,4 @@
 .container{
-    background-color: #bddcfd;
     height: 100vh;
     display: grid;
     align-items: center;
@@ -12,7 +11,7 @@
             & h1 {
                 font-size: 3em;
                 text-align: center;
-                color: #1c1b1b;
+                color: #ffffff;
                 & span{
                     color: #0076f4;
                 }
@@ -30,7 +29,7 @@
                     width: 400px;
                     object-fit: cover;
                     border-radius: 8px;
-                    background-color: #1c1b1b;
+                    background-color: #312f2f;
                     box-shadow: -10px 10px 0 #0076f4;
                     /* mask-image: linear-gradient(transparent, #000 50%); */
                 }
@@ -41,7 +40,7 @@
                     margin: 4rem auto;
                     font-size: 1.3em;
                     line-height: 33px;
-                    color: #1c1b1b;
+                    color: #ffffff;
                     & span{
                         color: #0076f4;
                         font-weight: 500;

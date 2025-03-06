@@ -74,9 +74,3 @@ nav {
         transform: translateX(-100%);
     }
 }
-
-svg {
-    position: absolute;
-    top: -40px;
-    box-shadow: 0 0 20px #000;
-}

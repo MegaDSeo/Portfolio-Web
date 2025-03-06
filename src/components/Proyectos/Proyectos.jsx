@@ -1,10 +1,12 @@
 import React from 'react';
-
-const Proyectos = () =>{
-    return(
+import './Proyectos.css'
+const Proyectos = () => {
+    return (
         <>
             <section id='proyectos'>
-                <h1>Proyectos</h1>
+                <div className="projets-contain">
+                    <h1>Mis <span>Proyectos</span></h1>
+                </div>
                 {/* <div className="projects-contain">
                     <div className="card">
                         <div className="overlay">
