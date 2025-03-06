@@ -1,5 +1,5 @@
 import React from 'react';
-import Perfil from '../../assets/perfil.jpg';
+import Perfil from '../../assets/perfil.png';
 import './About.css'
 
 const About = () => {

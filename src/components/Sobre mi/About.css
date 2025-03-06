@@ -1,6 +1,5 @@
 .container{
     background-color: #1c1b1b;
-    /* padding: 5rem 0; */
     height: 100vh;
     display: grid;
     align-items: center;
@@ -31,7 +30,9 @@
                     width: 400px;
                     object-fit: cover;
                     border-radius: 8px;
+                    background-color: #363535;
                     box-shadow: -10px 10px 0 #0076f4;
+                    /* mask-image: linear-gradient(transparent, #000 50%); */
                 }
                 & p{
                     text-align: justify;
