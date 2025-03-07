@@ -1,4 +1,5 @@
 import React from 'react';
+import Contruction from '../../../src/assets/construction.svg'
 import './Proyectos.css'
 const Proyectos = () => {
     return (
@@ -21,6 +22,7 @@ const Proyectos = () => {
                         <button>Ver Proyecto</button>
                     </div>
                 </div> */}
+                <img src={Contruction} alt="" />
             </section>
         </>
     )

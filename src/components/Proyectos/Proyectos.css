@@ -9,9 +9,14 @@
         & h1{
             font-size: 3em;
             color: #0076f4;
+            text-align: center;
             & span{
                 color: #fff;
             }
         }
+    }
+    & img{
+        margin-top: 4rem;
+        width: 600px;
     }
 }
