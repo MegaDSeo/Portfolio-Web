@@ -1,30 +1,38 @@
 footer{
-    height: 20vh;
-    padding: 2rem;
+    height: 10vh;
     display: grid;
     align-items: center;
-    justify-content: center;
-    & .contact-contain{
-        h1{
-            color: #0076f4;
-            font-size: 3em;
+    & .footer-contain{
+        max-width: 1240px;
+        width: 100%;
+        height: 30px;
+        margin: auto;
+        & hr{
+            border: none;
+            height: 3px;
+            width: 100%;
+            background-color: #312f2f;
         }
-        & form{
-            & .form-contain{
-                display: grid;
-                justify-content: center;
-                gap: 1rem;
-                & input{
-                    border: none;
-                    outline: none;
-                }
-                & textarea{
-                    resize: none;
-                    overflow: hidden;
-                    padding: .4rem .3rem;
-                    border: none;
-                    outline: none;
-                    form-sizing: content;
+        & .footer-info{
+            display: flex;
+            justify-content: space-between;
+            & p{
+                color: #fff;
+                text-align: center;
+                margin-top: 1rem;
+                font-size: 15px;
+            }
+            & ul{
+                margin-top: 1rem;
+                display: flex;
+                gap: 2rem;
+                & li{
+                    list-style: none;
+                    & a{
+                        color: #fff;
+                        cursor: pointer;
+                        font-size: 15px;
+                    }
                 }
             }
         }
