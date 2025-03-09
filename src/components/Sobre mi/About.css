@@ -22,7 +22,6 @@
                 align-items: center;
                 justify-content: space-between;
                 position: relative;
-    
                 & img {
                     width: 400px;
                     object-fit: cover;
@@ -54,7 +53,7 @@
         #about{
             & .about-contain{
                 & h1{
-                    font-size: 2.5em;
+                    font-size: 2em;
                 }
                 & .about-p-image{
                     margin-top: 3rem;
@@ -67,6 +66,72 @@
                         max-width: 450px;
                         margin: 2rem 0;
                         line-height: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {  
+    .container{
+        padding: 2rem 0;
+        height: 100vh;
+        & #about{
+            & .about-contain{
+                & .about-p-image{
+                    margin-top: 2rem;
+                    justify-content: center;
+                    & img{
+                        width: 300px;
+                    }
+                    & p{
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+    }
+  }
+
+@media (min-width: 768px) and (max-width: 991px){
+    .container{
+        padding: 2rem 0;
+        height: 80vh;
+        & #about{
+            & .about-contain{
+                & .about-p-image{
+                    margin-top: 2rem;
+                    justify-content: center;
+                    & img{
+                        width: 350px;
+                    }
+                    & p{
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767px) {  
+    .container{
+        padding: 2rem 0;
+        height: 100vh;
+        & #about{
+            & .about-contain{
+                & h1{
+                    font-size: 2.5em;
+                }
+                & .about-p-image{
+                    margin-top: 2rem;
+                    justify-content: center;
+                    & img{
+                        width: 300px;
+                    }
+                    & p{
+                        line-height: 30px;
+                        font-size: .9em;
                     }
                 }
             }

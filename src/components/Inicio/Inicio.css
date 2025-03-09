@@ -127,3 +127,88 @@ main{
         }
     }
 }
+
+@media (min-width: 992px) and (max-width: 1199px) {  
+     main{
+        & .main-max-contain{
+            & .contain{
+                & h1{
+                    font-size: 3.5em;
+                }
+                & h3{
+                    font-size: 2.5em;
+                }
+                & p{
+                    max-width: 460px;
+                    font-size: 1em;
+                }
+            }
+        }
+     }
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {  
+    main{
+        & .main-max-contain{
+            flex-direction: column-reverse;
+            & .contain{
+                & h1{
+                    font-size: 3em;
+                    text-align: center;
+                }
+                & h3{
+                    font-size: 2em;
+                    text-align: center;
+                }
+                & p{
+                    text-align: justify;
+                    hyphens: auto;
+                    max-width: 460px;
+                    font-size: 1em;
+                }
+            }
+            & .main-overlay{
+                & .avatar{
+                    width: 400px;
+                    height: 400px;
+                }
+            }
+        }
+     }
+  }
+
+  @media (max-width: 767px) {  
+    main{
+        & .main-max-contain{
+            flex-direction: column-reverse;
+            & .contain{
+                & h1{
+                    font-size: 2.6em;
+                    text-align: center;
+                }
+                & h3{
+                    font-size: 2em;
+                    text-align: center;
+                }
+                & p{
+                    text-align: justify;
+                    hyphens: auto;
+                    max-width: 460px;
+                    font-size: .8em;
+                }
+                & .main-social{
+                    justify-content: center;
+                    & a{
+                        font-size: .7em;
+                    }
+                }
+            }
+            & .main-overlay{
+                & .avatar{
+                    width: 230px;
+                    height: 230px;
+                }
+            }
+        }
+     }
+  }

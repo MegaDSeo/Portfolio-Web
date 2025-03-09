@@ -39,14 +39,14 @@ footer{
     }
 }
 
-@media screen and (max-width:575px){
+@media (max-width:767px){
     footer{
         height: 5vh;
         & .footer-contain{
             & .footer-info{
                 justify-content: center;
                 & p{
-                   font-size: 10px; 
+                   font-size: 13px; 
                 }
                 & ul{
                     display: none;

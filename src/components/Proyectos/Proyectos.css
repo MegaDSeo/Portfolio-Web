@@ -34,3 +34,17 @@
         }
     }
 }
+
+@media (max-width: 767px) {  
+    #proyectos{
+        padding: 2rem 0;
+        & .projets-contain{
+            & h1{
+                font-size: 2.5em;
+            }
+        }
+        & img{
+            width: 400px;
+        }
+    }
+  }

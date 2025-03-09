@@ -95,7 +95,7 @@ nav {
     }
 }
 
-@media screen and (max-width: 575px) {
+@media (min-width: 575px) and (max-width: 767px) {
     body{
         overflow-x: hidden;
     }
@@ -103,7 +103,63 @@ nav {
         position: sticky;
         top: 0;
         & .nav-max-contain {
+            & .menu {
+                position: fixed;
+                background-color: #312F2F;
+                width: 250px;
+                height: 70vh;
+                display: grid;
+                justify-content: center;
+                top: 0;
+                right: -100%;
+                padding: 2rem;
+                z-index: 10;
+                transition: right 300ms ease-in-out;
+                &.open{
+                    right: 0;
+                }
+                &.cerrar{
+                    right: -100%;
+                }
+                & .close {
+                    display: block;
+                    top: 20px;
+                    right: 15px;
+                    fill: #0076f4;
+                    cursor: pointer;
+                }
 
+                & li {
+                    text-align: center;
+                    & a {
+                        &::after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            & .bar,
+            .close {
+                display: block;
+            }
+
+            & .bar {
+                z-index: 1;
+
+            }
+        }
+    }
+}
+
+@media (max-width: 575px){
+    body{
+        overflow-x: hidden;
+    }
+    nav {
+        position: sticky;
+        top: 0;
+        & .nav-max-contain {
             & .menu {
                 position: fixed;
                 background-color: #312F2F;
