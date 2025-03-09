@@ -10,13 +10,15 @@ import './App.css'
 function App() {
   return (
     <>
-      <Nav />
-      <Inicio />
-      <About />
-      <Proyectos />
-      <Skills />
-      <Contacto />
-      <Footer />
+      <div className="conta">
+        <Nav />
+        <Inicio />
+        <About />
+        <Proyectos />
+        <Skills />
+        <Contacto />
+        <Footer />
+      </div>
     </>
   )
 }
