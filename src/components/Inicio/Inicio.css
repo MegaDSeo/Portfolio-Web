@@ -93,6 +93,7 @@ main{
 
 @media screen and (max-width:575px) {
     main{
+        padding: 2rem 0;
         & .main-max-contain{
             flex-direction: column-reverse;
             & .contain{

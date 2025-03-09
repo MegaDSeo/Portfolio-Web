@@ -99,6 +99,8 @@ nav {
 
 @media screen and (max-width: 575px) {
     nav {
+        position: sticky;
+        top: 0;
         & .nav-max-contain {
 
             & .menu {
