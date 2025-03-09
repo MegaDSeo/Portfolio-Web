@@ -21,22 +21,19 @@
 
         & .form-animation {
             & form {
+                display: grid;
+                place-items: center;
                 padding: 1.5rem;
                 border-radius: 4px;
                 text-align: center;
-                display: grid;
-                place-items: center;
                 row-gap: 1.5rem;
-
-
                 & .form-contain {
                     display: grid;
                     row-gap: 1.5rem;
-
                     & .form-names {
                         display: flex;
                         gap: 2rem;
-
+                        
                         & input {
                             padding: .5rem .7rem;
                             width: 200px;
@@ -50,7 +47,6 @@
 
                     & .form-email {
                         overflow: hidden;
-
                         & input {
                             padding: .5rem .7rem;
                             width: 95.5%;
@@ -99,6 +95,48 @@
                     &:hover{
                         background-color: #fff;
                         color: #1c1b1b;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #contacto{
+        height: 100vh;
+        padding: 2rem 0;
+        & .contact-contain{
+            & h1{
+                font-size: 2.5em;
+            }
+            & .form-animation{
+                display: grid;
+                width: 400px;
+                & form{
+                    display: grid;
+                    align-items: center;
+                    & .form-contain{
+                        width: 100%;
+                        display: grid;
+                        & .form-names{
+                            display: grid;
+                            place-items: center;
+                            & input{
+                                width: 90%;
+                            }
+                        }
+                        & .form-email{
+                            overflow: visible;
+                            & input{
+                                width: 89%;
+                            }
+                        }
+                        & .form-message{
+                            & textarea{
+                                width: 89%;
+                            }
+                        }
                     }
                 }
             }

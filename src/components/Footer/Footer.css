@@ -15,16 +15,16 @@ footer{
         }
         & .footer-info{
             display: flex;
+            align-items: center;
             justify-content: space-between;
+            height: 100%;
             & p{
                 color: #fff;
-                text-align: center;
-                margin-top: 1rem;
                 font-size: 15px;
             }
             & ul{
-                margin-top: 1rem;
                 display: flex;
+                align-items: center;
                 gap: 2rem;
                 & li{
                     list-style: none;
@@ -33,6 +33,23 @@ footer{
                         cursor: pointer;
                         font-size: 15px;
                     }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:575px){
+    footer{
+        height: 5vh;
+        & .footer-contain{
+            & .footer-info{
+                justify-content: center;
+                & p{
+                   font-size: 10px; 
+                }
+                & ul{
+                    display: none;
                 }
             }
         }
