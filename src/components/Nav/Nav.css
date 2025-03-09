@@ -1,6 +1,4 @@
-body {
-    overflow-x: hidden;
-}
+
 
 nav {
     height: 12vh;
@@ -98,6 +96,9 @@ nav {
 }
 
 @media screen and (max-width: 575px) {
+    body{
+        overflow-x: hidden;
+    }
     nav {
         position: sticky;
         top: 0;
@@ -107,7 +108,7 @@ nav {
                 position: fixed;
                 background-color: #312F2F;
                 width: 250px;
-                height: 100vh;
+                height: 70vh;
                 display: grid;
                 justify-content: center;
                 top: 0;
