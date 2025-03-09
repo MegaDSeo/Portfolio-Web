@@ -42,11 +42,8 @@
 
 @media screen and (max-width: 575px) {
     #habilidades{
-        height: 100vh;
-
-        padding: 2rem;
+        height: 90vh;
         & .skills-contain{
-            row-gap: 2rem;
             & h1{
                 font-size: 2.5em;
             }

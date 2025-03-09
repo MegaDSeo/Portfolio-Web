@@ -100,7 +100,6 @@ nav {
 @media screen and (max-width: 575px) {
     nav {
         & .nav-max-contain {
-            max-width: 550px;
 
             & .menu {
                 position: fixed;
