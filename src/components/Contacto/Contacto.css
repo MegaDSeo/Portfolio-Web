@@ -104,7 +104,6 @@
 
 @media screen and (max-width: 575px) {
     #contacto{
-        padding: 2rem 0;
         & .contact-contain{
             & h1{
                 font-size: 2.5em;
